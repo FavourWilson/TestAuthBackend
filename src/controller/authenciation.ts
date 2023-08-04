@@ -23,7 +23,7 @@ export const login = async (req: express.Request, res: express.Response) => {
         user.authenciation.sessionToken = authenciation(salt, user._id.toString());
         await user.save();
 
-        res.cookie('SAMBISA-REST_API', user.authenciation.sessionToken, { domain: 'localhost', path: '/' })
+        res.cookie('SAMBISA-REST', user.authenciation.sessionToken, { domain: 'localhost', path: '/' })
         return res.status(200).json(user);
     } catch (error) {
         console.log(error)
