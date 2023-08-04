@@ -13,8 +13,12 @@
     },
     "ts-node": {
     "compilerOptions": {
-      "module": "commonjs"
-    }
+      "module": "CommonJS",
+      "esModuleInterop": true
+    },
+    "require": [
+      "tsconfig-paths/register"
+    ]
   },
     "include": ["src/**/*"]
 }
