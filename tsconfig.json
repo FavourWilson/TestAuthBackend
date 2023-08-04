@@ -4,7 +4,7 @@
          "es6"
       ],
       "target": "es6",
-      "module": "NodeNext",
+      "module": "esnext",
       "moduleResolution": "node",
       "baseUrl": "src",
       "outDir": "dist",
@@ -12,5 +12,10 @@
       "noImplicitAny": true,
        "esModuleInterop": true,
     },
+    "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
     "include": ["src/**/*"]
 }
