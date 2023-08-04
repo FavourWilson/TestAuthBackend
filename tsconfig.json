@@ -10,7 +10,6 @@
       "outDir": "dist",
       "sourceMap": true,
       "noImplicitAny": true,
-       "esModuleInterop": true,
     },
     "ts-node": {
     "compilerOptions": {
