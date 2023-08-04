@@ -1,24 +1,17 @@
 {
     "compilerOptions":{
-       "lib": [
-         "es6"
-      ],
       "target": "es6",
-      "module": "esnext",
+      "module": "CommonJS",
       "moduleResolution": "node",
       "baseUrl": "src",
       "outDir": "dist",
       "sourceMap": true,
       "noImplicitAny": true,
+      "esModuleInterop": true,
     },
     "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS",
-      "esModuleInterop": true
-    },
-    "require": [
-      "tsconfig-paths/register"
-    ]
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
   },
     "include": ["src/**/*"]
 }
