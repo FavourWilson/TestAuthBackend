@@ -1,5 +1,9 @@
 {
     "compilerOptions":{
+       "lib": [
+         "es6"
+      ],
+      "target": "es6",
       "module": "NodeNext",
       "moduleResolution": "node",
       "baseUrl": "src",
