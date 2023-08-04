@@ -6,8 +6,12 @@
       "baseUrl": "src",
       "outDir": "dist",
       "sourceMap": true,
+      "allowJs":true,
+      "skipLibCheck": true,
+      "resolveJsonModule": true,
       "noImplicitAny": true,
       "esModuleInterop": true,
+      "rootDir": "src"
     },
     "ts-node": {
     "esm": true,
